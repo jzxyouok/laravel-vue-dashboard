@@ -27,7 +27,7 @@ function flash($title = null, $message = null)
     return $flash->info($title, $message);
 }
 
-function link_to($body, $path, $type)
+function linkTo($body, $path, $type)
 {
     $csrf = csrf_field();
     $method = method_field($type);

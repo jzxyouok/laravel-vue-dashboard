@@ -1,26 +1,34 @@
 <template>
-    <div>
-        <slot></slot>
+    <div class="dashboard-view container">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-	// export default {
-	//         data() {
-	//             return {
-	//                 isguest: dashboard.isGuest,
-	//                 username: dashboard.userData['name'],
+    export default {
 
-	//                 isActive: false,
-	//                 dashboard__menu: true,
-	//                 users__menu: false,
-	//                 settings__menu: false,
-	//                 calendar__menu: false,
-	//                 projects__menu: false,
-	//                 calendar: [],
-	//             }
-	//         },
-	// }
+        route: {
+            data () {
+                return this.$http.get('/')
+                    .then(({data}) => ({ pusherKey: data }));
+            },
+        },
+
+        data: function() {
+            return {
+
+            }
+        },
+
+        methods: {
+
+        },
+
+    };
 </script>
 
 <style lang="scss">

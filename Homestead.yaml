@@ -2,8 +2,8 @@
 ip: "192.168.10.10"
 memory: 2048
 cpus: 1
-hostname: dashboard
-name: dashboard
+hostname: laravel-vue-dashboard
+name: laravel-vue-dashboard
 provider: virtualbox
 
 authorize: ~/.ssh/id_rsa.pub
@@ -12,13 +12,12 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: "/Users/bobfridley/Code/dashboard.save1"
-      to: "/home/vagrant/dashboard.save1"
-      schedule: true
+    - map: "/Users/bobfridley/Code/laravel-vue-dashboard"
+      to: "/home/vagrant/laravel-vue-dashboard"
 
 sites:
     - map: dashboard.app
-      to: "/home/vagrant/dashboard.save1/public"
+      to: "/home/vagrant/laravel-vue-dashboard/public"
 
 databases:
     - dtc_dashboard
