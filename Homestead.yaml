@@ -1,0 +1,37 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+hostname: dashboard
+name: dashboard
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "/Users/bobfridley/Code/dashboard.save1"
+      to: "/home/vagrant/dashboard.save1"
+      schedule: true
+
+sites:
+    - map: dashboard.app
+      to: "/home/vagrant/dashboard.save1/public"
+
+databases:
+    - dtc_dashboard
+
+blackfire:
+     - id: 123f63e3-78a4-4ea3-b611-86c382640840
+       token: 0b1fbe864260366e8804ae4634299d5f8eabd993c63aac273e01b33d1c69a086
+       client-id: b06e5a37-723b-466e-8328-a133dc6d5a39
+       client-token: 4f509ef5b45737ba90137f86387089c1aa0ba7679bee0eccc9c3d319b9ff8b79
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp

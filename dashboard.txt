@@ -1,0 +1,74 @@
+GoogleTasks
+"client_id":"399434807681-lp3iepff9nsss2qhluq1lgd84e6tbjte.apps.googleusercontent.com"
+"client_secret":"_Zp5Yi5AOv_bVrmG3kKnnyPM"
+
+array:15 [
+  "Cache-Control" => array:1 [
+    0 => "must-revalidate, no-cache, no-store, private, max-age=0"
+  ]
+  "Content-Type" => array:1 [
+    0 => "application/json; charset=utf-8"
+  ]
+  "Date" => array:1 [
+    0 => "Mon, 11 Jul 2016 16:45:52 GMT"
+  ]
+  "Expires" => array:1 [
+    0 => "Wed, 13 Oct 2010 00:00:00 UTC"
+  ]
+  "Pragma" => array:1 [
+    0 => "no-cache"
+  ]
+  "Set-Cookie" => array:1 [
+    0 => "_x_w=2; path=/"
+  ]
+  "Status" => array:1 [
+    0 => "200 OK"
+  ]
+  "X-Freshdesk-API-Version" => array:1 [
+    0 => "latest=v2; requested=v2"
+  ]
+  "X-Rack-Cache" => array:1 [
+    0 => "miss"
+  ]
+  "X-RateLimit-Remaining" => array:1 [
+    0 => "2999"
+  ]
+  "X-RateLimit-Total" => array:1 [
+    0 => "3000"
+  ]
+  "X-RateLimit-Used-CurrentRequest" => array:1 [
+    0 => "1"
+  ]
+  "X-Request-Id" => array:1 [
+    0 => "2638173886d58b6863986db87e243ac7"
+  ]
+  "transfer-encoding" => array:1 [
+    0 => "chunked"
+  ]
+  "Connection" => array:1 [
+    0 => "keep-alive"
+  ]
+]
+
+Thomas Tobin    ttobin        vocaldiv		303
+Chad Roeder     ChadRoeder    j=b183r=!E	305
+Harry Home Ofc  HarryF        tG==F6;8bK	514
+TT Home Office	tthome		                306
+Billing Office	BillOfc		    Y@Q8;$w3h$	515
+Sue Younker	    SusanY		    wY$1p7dBen	513
+Albree Boone    AlbreeB		    YTz@41!h$!	304
+Bob Fridley	    bobfridley	  5X1;RhT202	302
+Taylor Copus    TaylorC		    n;YG=x303=	308
+Megan Hill      MeganHill	    S=C0bWmD;y	301
+
+
+# vonage endpoints
+https://my.vonagebusiness.com/appserver/rest/user/null (auth)
+https://my.vonagebusiness.com/presence/rest/clicktocall/[phonenumber]
+https://my.vonagebusiness.com/presence/rest/directory
+https://my.vonagebusiness.com/presence/rest/extension/[extension-number]
+https://my.vonagebusiness.com/presence/rest/callhistory/[extension number][?parameterlist]
+https://my.vonagebusiness.com/presence/dashui[?filterExtension=[extensionlist]&firstRequest=true]
+https://my.vonagebusiness.com/presence/rest/callrecording/[presenceCallId]
+https://my.vonagebusiness.com/presence/rest/conference/[extension-number]
+https://my.vonagebusiness.com/presence/rest/queue/[extension-number]

@@ -1,0 +1,41 @@
+.vonage__title {
+    color: color($blue, light);
+    font-size: setting($font-size, s);
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.vonage__extension, .vonage__name, .vonage__icon {
+    color: color $white;
+    font-size: setting($font-size, xs);
+}
+
+.vonage__name {
+    @include ellipsis;
+}
+
+.vonage__with {
+    color: color($orange, light);
+    font-size: setting($font-size, xxs);
+}
+
+.vonage__icon {
+    @include ellipsis;
+    text-align: left;
+}
+
+table tr td i.fa.fa-long-arrow-left, table tr td i.fa.fa-long-arrow-right  {
+    color: color($green, default);
+}
+
+table tr td i.fa.fa-phone,  {
+    color: color($green, default);
+}
+
+table tr td i.fa.fa-volume-control-phone {
+    color: color($orange, default);
+}
+
+table tr td i.fa.fa-times {
+    color: color($red, default);
+}

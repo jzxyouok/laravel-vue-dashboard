@@ -1,0 +1,48 @@
+// Variables
+// -------------------------------------------------------
+
+$font-path:        "/fonts" !default;
+
+// Custom Bootstrap
+// -------------------------------------------------------
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
+
+// BOXES
+// -------------------------------------------------------
+$box-border-color: #f4f4f4;
+$box-border-radius: 3px;
+$box-footer-bg: #fff;
+$box-boxshadow: 0 1px 1px rgba(0, 0, 0, .1);
+$box-padding: 10px;
+
+// Box variants
+$box-default-border-top-color: #d2d6de;
+
+// PROGRESS BARS
+// -------------------------------------------------------
+$progress-bar-border-radius: 1px;
+$progress-bar-sm-border-radius: 1px;
+$progress-bar-xs-border-radius: 1px;
+
+// DIRECT CHAT
+// -------------------------------------------------------
+$direct-chat-height: 250px;
+$direct-chat-default-msg-bg: color($gray, default);
+$direct-chat-default-font-color: #444;
+$direct-chat-default-msg-border-color: color($gray, default);
+
+// CHAT WIDGET
+// -------------------------------------------------------
+$attachment-border-radius: 3px;
+
+// TRANSITIONS SETTINGS
+// -------------------------------------------------------
+
+//Transition global options
+$transition-speed: .3s;
+$transition-fn: ease-in-out;
+//cubic-bezier(0.32, 1.25, 0.375, 1.15);
+
+$radius: 3px;

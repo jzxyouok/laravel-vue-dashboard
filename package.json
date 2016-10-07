@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp",
+    "dev": "gulp watch",
+    "local": "gulp watch"
+  },
+  "dependencies": {
+    "bootstrap-daterangepicker": "^2.1.24",
+    "bootstrap-sass": "^3.3.*",
+    "chart.js": "^2.3.0",
+    "datatables": "^1.10.12",
+    "font-awesome": "*",
+    "fullcalendar": "^3.0.1",
+    "jquery": "^2.2.4",
+    "laravel-echo": "^1.0.5",
+    "loaders.css": "^0.1.2",
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0",
+    "normalize.css": "^4.2.0",
+    "nprogress": "^0.2.0",
+    "pusher-js": "^3.2.1",
+    "stringify": "^5.1.0",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.0",
+    "vue-tables-2": "^0.0.8"
+  },
+  "devDependencies": {
+    "aliasify": "^2.0.0",
+    "babel-helper-vue-jsx-merge-props": "^2.0.1",
+    "babel-plugin-syntax-jsx": "^6.13.0",
+    "babel-plugin-transform-vue-jsx": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "laravel-elixir": "^5.0.0",
+    "laravel-elixir-vueify": "^1.0.6"
+  },
+  "browserify": {
+    "transform": [
+      "aliasify"
+    ]
+  },
+  "aliasify": {
+    "aliases": {
+      "vue": "./node_modules/vue/dist/vue.js"
+    }
+  }
+}

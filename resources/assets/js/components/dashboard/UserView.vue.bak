@@ -1,0 +1,111 @@
+<template>
+    <div class="user-view container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="users" class="users">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Users</div>
+
+                        <v-client-table :data="tableData" :columns="columns" :options="options"></v-client-table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+
+        route: {
+            data () {
+                return this.$http.get('/api/users')
+                    .then(({data}) => ({ tableData: data }));
+            },
+        },
+
+        data: function() {
+            return {
+                columns:[
+                    'name',
+                    'email',
+                    'phone',
+                    'registration_date'
+                ],
+                options: {
+                    dateColumns: ['registration_date'],
+                    headings: {
+                        name: 'Name',
+                        email: 'Email',
+                        phone: 'Phone',
+                        registration_date: 'Registration Date',
+                        edit: 'Edit',
+                        delete: 'Delete'
+                    },
+                    templates: {
+                        edit: "<a href='/user/{id}/edit'><i class='glyphicon glyphicon-edit'></i></a>",
+                        delete: "<a href='javascript:void(0);' @click='$parent.deleteMe({id})'><i class='glyphicon glyphicon-erase'></i></a>"
+                    },
+                },
+                tableData: [],
+            }
+        },
+
+        methods: {
+            deleteMe: function(id) {
+                alert("Delete " + id);
+            },
+        },
+
+    };
+</script>
+
+<style lang="scss">
+    th,
+    td {
+        text-align: left;
+    }
+
+    th:nth-child(n+2), td:nth-child(n+2) {
+        text-align: center;
+    }
+
+    thead tr:nth-child(2) th {
+        font-weight: normal;
+    }
+
+    .VueTables__sort-icon {
+        margin-left: 10px;
+    }
+
+    .VueTables__dropdown-pagination {
+        margin-left: 10px;
+    }
+
+    .VueTables__highlight {
+        background: yellow;
+        font-weight: normal;
+    }
+
+    .VueTables__sortable {
+        cursor: pointer;
+    }
+
+    .VueTables__date-filter {
+        border: 1px solid #ccc;
+        padding: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .VueTables__filter-placeholder {
+        color: #aaa;
+    }
+
+    .VueTables__list-filter {
+        width:120px;
+    }
+</style>

@@ -1,0 +1,16 @@
+@import "node_modules/font-awesome/scss/font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900);
+$font-family-sans-serif: 'Lato', sans-serif;
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import 'utility/functions';
+@import 'utility/mixins';
+
+@import 'settings/typography';
+@import 'settings/colors';
+
+@import 'layout/defaults';
+@import 'layout/dashboard';
+@import 'layout/graph';
+@import 'layout/dashboard-sidebar';
+@import 'layout/skin-blue';

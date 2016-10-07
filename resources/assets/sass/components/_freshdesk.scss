@@ -1,0 +1,24 @@
+.freshdesk__title {
+    color: color($blue, light);
+    font-size: setting($font-size, s);
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.freshdesk__heading, .freshdesk__agent, .freshdesk__requester, .freshdesk__ticket, .freshdesk__date, .freshdesk__status {
+    color: color $white;
+    font-size: setting($font-size, xs);
+}
+
+.freshdesk__agent, .freshdesk__date {
+    white-space:nowrap;
+}
+
+.freshdesk__subject {
+	overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;	
+}

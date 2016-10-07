@@ -1,0 +1,35 @@
+.task__title {
+    color: color($blue, light);
+    font-size: setting($font-size, s);
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.task__field__label {
+    color: color($blue, lightest);
+    @include font-sans-bold;
+    font-size: setting($font-size, xs);
+    opacity: 1;
+}
+
+.task__events {
+    color: color($blue, light);
+    font-size: setting($font-size, xs);
+}
+
+.task__event {
+    padding-bottom: 1.5vh;
+}
+
+.task__event__title, .task__event__due, .task__event__updated, .task__event__status, .task__event__notes {
+    @include font-sans;
+    font-size: setting($font-size, xs);
+}
+
+.task__event__due {
+    float: left;
+}
+
+.task__event__updated {
+    float: right;
+}

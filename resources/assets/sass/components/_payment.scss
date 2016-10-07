@@ -1,0 +1,36 @@
+.payment__title {
+    color: color($blue, light);
+    font-size: setting($font-size, s);
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.payment__heading, .payment__amount, .payment__count {
+    font-size: setting($font-size, xs);
+}
+
+.payment__heading, .payment__amount, .payment__count {
+    color: color $white;
+}
+
+.payment__type {
+    font-size: setting($font-size, s);
+    color: color($orange, light);
+}
+
+.payment__amount, .payment__count, .payment__total {
+    text-align: right;
+}
+
+.payment__total, .payment__total__text {
+	@include font-sans-bold;
+}
+
+.payment__total, .payment__total__text {
+	border-top: 1px double color($gray, lighter);
+	border-bottom: none;
+}
+
+.fa-cc-telecheck:before {
+  content: "\f501";
+}

@@ -1,0 +1,9 @@
+/*
+ * Skin: Blue
+ * ----------
+ */
+
+.skin-blue {
+  // Create the sidebar skin
+  @include skin-dark-sidebar(color($blue, light));
+}
